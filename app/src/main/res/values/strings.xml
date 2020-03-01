@@ -4,11 +4,18 @@
     <string name="header_1">go all in</string>
     <string name="header_2">on goging all out</string>
     <string name="description_text">find a team in your city and Dominate the league</string>
-    <string name="men_button">Men</string>
-    <string name="women_button">Women</string>
-    <string name="co_edButton">co-ed</string>
     <string name="nextButton">Next</string>
     <string name="swoosh_button_name">Get Started</string>
     <string name="dl_text">Desired League</string>
+    <string name="skillScreenBg">SkillScreenBg</string>
+    <string name="finishButtonText">Finish</string>
+    <string name="swooshlogo">swooshLogo</string>
+    <string name="i_am_a">I am a</string>
+    <string name="beginner">Beginner</string>
+    <string name="baller">Baller</string>
+    <string name="co_ed">Co-ed</string>
+    <string name="women">Women</string>
+    <string name="men">Men</string>
+
 
 </resources>
