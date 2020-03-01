@@ -21,8 +21,8 @@
     <Button
         android:id="@+id/nextButton"
         style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="347dp"
-        android:layout_height="56dp"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
         android:layout_marginBottom="48dp"
         android:background="@drawable/swoosh_button_background"
         android:text="@string/nextButton"
@@ -36,8 +36,8 @@
     <Button
         android:id="@+id/co_edButton"
         style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="347dp"
-        android:layout_height="56dp"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
         android:layout_marginTop="32dp"
         android:background="@drawable/swoosh_toggle"
         android:text="@string/co_edButton"
@@ -51,8 +51,8 @@
     <Button
         android:id="@+id/womenButton"
         style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="347dp"
-        android:layout_height="56dp"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
         android:layout_marginTop="28dp"
         android:background="@drawable/swoosh_toggle"
         android:text="@string/women_button"
@@ -93,8 +93,8 @@
     <Button
         android:id="@+id/menButton"
         style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="347dp"
-        android:layout_height="56dp"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
         android:layout_marginTop="48dp"
         android:background="@drawable/swoosh_toggle"
         android:text="@string/men_button"
