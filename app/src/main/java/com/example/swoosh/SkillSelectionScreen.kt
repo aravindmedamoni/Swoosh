@@ -3,6 +3,7 @@ package com.example.swoosh
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.widget.Toast
 import com.example.swoosh.models.Player
 import com.example.swoosh.utilities.EXTRA_PLAYER
@@ -10,7 +11,11 @@ import kotlinx.android.synthetic.main.activity_skill_selection_screen.*
 
 class SkillSelectionScreen : AppCompatActivity() {
 
-   lateinit var player: Player;
+     lateinit var player: Player;
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putParcelable(EXTRA_PLAYER,player)
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_skill_selection_screen)
@@ -34,6 +39,13 @@ class SkillSelectionScreen : AppCompatActivity() {
             }else{
                 Toast.makeText(this,"please select skill!",Toast.LENGTH_SHORT).show()
             }
+        }
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        if(savedInstanceState != null){
+            player = savedInstanceState.getParcelable<Player>(EXTRA_PLAYER)!!
         }
     }
 }

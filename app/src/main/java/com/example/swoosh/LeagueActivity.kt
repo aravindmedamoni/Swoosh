@@ -3,6 +3,7 @@ package com.example.swoosh
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.widget.Toast
 import com.example.swoosh.models.Player
 import com.example.swoosh.utilities.EXTRA_PLAYER
@@ -11,6 +12,11 @@ import kotlinx.android.synthetic.main.activity_league.*
 class LeagueActivity : AppCompatActivity() {
 
    lateinit var player: Player
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putParcelable(EXTRA_PLAYER,player)
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_league)
@@ -40,6 +46,13 @@ class LeagueActivity : AppCompatActivity() {
             }else{
                 Toast.makeText(this,"Please select any one league!",Toast.LENGTH_SHORT).show()
             }
+        }
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        if(savedInstanceState != null){
+            player = savedInstanceState.getParcelable<Player>(EXTRA_PLAYER)!!
         }
     }
 }
