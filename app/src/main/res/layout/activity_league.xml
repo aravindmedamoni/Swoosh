@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginBottom="20dp"
     tools:context=".LeagueActivity">
 
     <ImageView
@@ -24,7 +23,7 @@
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="300dp"
         android:layout_height="52dp"
-        android:layout_marginBottom="48dp"
+        android:layout_marginBottom="36dp"
         android:background="@drawable/swoosh_button_background"
         android:text="@string/nextButton"
         android:textColor="@android:color/white"
@@ -32,6 +31,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/leaguebgImage"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView

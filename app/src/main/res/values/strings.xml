@@ -16,6 +16,8 @@
     <string name="co_ed">Co-ed</string>
     <string name="women">Women</string>
     <string name="men">Men</string>
+    <string name="finishbg">finishBg</string>
+    <string name="dsText">Looking for Co-ed beginner league near you</string>
 
 
 </resources>
