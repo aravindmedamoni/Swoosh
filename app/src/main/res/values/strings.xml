@@ -4,5 +4,11 @@
     <string name="header_1">go all in</string>
     <string name="header_2">on goging all out</string>
     <string name="description_text">find a team in your city and Dominate the league</string>
+    <string name="men_button">Men</string>
+    <string name="women_button">Women</string>
+    <string name="co_edButton">co-ed</string>
+    <string name="nextButton">Next</string>
     <string name="swoosh_button_name">Get Started</string>
+    <string name="dl_text">Desired League</string>
+
 </resources>

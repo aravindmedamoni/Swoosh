@@ -81,7 +81,7 @@
         android:layout_width="283dp"
         android:layout_height="52dp"
         android:layout_marginBottom="52dp"
-        android:background="@drawable/swooth_button_background"
+        android:background="@drawable/swoosh_button_background"
         android:text="@string/swoosh_button_name"
         android:textColor="@android:color/white"
         android:textSize="18sp"
