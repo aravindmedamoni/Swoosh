@@ -3,33 +3,36 @@ package com.example.swoosh
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.swoosh.utilities.EXTRA_LEAGUE
-import com.example.swoosh.utilities.EXTRA_SKILL
+import android.widget.Toast
+import com.example.swoosh.models.Player
+import com.example.swoosh.utilities.EXTRA_PLAYER
 import kotlinx.android.synthetic.main.activity_skill_selection_screen.*
 
 class SkillSelectionScreen : AppCompatActivity() {
 
-    var league = ""
-    var skill = ""
+   lateinit var player: Player;
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_skill_selection_screen)
-        league = intent.getStringExtra(EXTRA_LEAGUE)
+
+        player = intent.getParcelableExtra(EXTRA_PLAYER)
 
         beginnerToggleButton.setOnClickListener {
             ballerToggleButton.isChecked = false
-            skill = "Beginner"
+            player.skill = "Beginner"
         }
 
         ballerToggleButton.setOnClickListener {
             beginnerToggleButton.isChecked = false
-            skill = "Baller"
+            player.skill = "Baller"
         }
         finishButton.setOnClickListener {
-            if(skill != ""){
+            if(player.skill != ""){
                 val finishIntent = Intent(this,FinishActivity::class.java)
-                finishIntent.putExtra(EXTRA_SKILL,skill)
+                finishIntent.putExtra(EXTRA_PLAYER,player)
                 startActivity(finishIntent)
+            }else{
+                Toast.makeText(this,"please select skill!",Toast.LENGTH_SHORT).show()
             }
         }
     }
