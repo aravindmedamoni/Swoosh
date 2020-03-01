@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Swoosh</string>
+    <string name="content_description">ImageView</string>
+    <string name="header_1">go all in</string>
+    <string name="header_2">on goging all out</string>
+    <string name="description_text">find a team in your city and Dominate the league</string>
+    <string name="swoosh_button_name">Get Started</string>
 </resources>
