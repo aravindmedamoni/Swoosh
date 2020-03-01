@@ -84,7 +84,7 @@
             android:textColor="@android:color/white"
             android:textOff="@string/beginner"
             android:textOn="@string/beginner"
-            android:textSize="24sp"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <ToggleButton
@@ -98,7 +98,7 @@
             android:textColor="@android:color/white"
             android:textOff="@string/baller"
             android:textOn="@string/baller"
-            android:textSize="24sp"
+            android:textSize="18sp"
             android:textStyle="bold" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

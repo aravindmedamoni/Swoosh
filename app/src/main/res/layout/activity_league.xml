@@ -28,7 +28,7 @@
         android:background="@drawable/swoosh_button_background"
         android:text="@string/nextButton"
         android:textColor="@android:color/white"
-        android:textSize="24sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/leaguebgImage"
         app:layout_constraintEnd_toEndOf="parent"
@@ -84,7 +84,7 @@
             android:textColor="@android:color/white"
             android:textOff="@string/men"
             android:textOn="@string/men"
-            android:textSize="24sp"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <ToggleButton
@@ -99,7 +99,7 @@
             android:textColor="@android:color/white"
             android:textOff="@string/women"
             android:textOn="@string/women"
-            android:textSize="24sp"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <ToggleButton
@@ -114,7 +114,7 @@
             android:textColor="@android:color/white"
             android:textOff="@string/co_ed"
             android:textOn="@string/co_ed"
-            android:textSize="24sp"
+            android:textSize="18sp"
             android:textStyle="bold" />
     </LinearLayout>
 
