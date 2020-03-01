@@ -4,11 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
-    tools:context=".MainActivity"/>
-=======
     tools:context=".MainActivity">
-
     <ImageView
         android:id="@+id/backgroundImage"
         android:layout_width="0dp"
@@ -95,4 +91,3 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
->>>>>>> 3d0b29a98826860d17e9df7defa13153e82fea91
